@@ -1,0 +1,9 @@
+{
+    "java.compile.nullAnalysis.mode": "disabled",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.import.gradle.enabled": true,
+    "java.project.referencedLibraries": [
+        "${workspaceFolder}/common/build/moddev/artifacts/vanilla-*-merged.jar",
+        "${workspaceFolder}/neoforge/build/moddev/artifacts/neoforge-*-merged.jar"
+    ]
+}
