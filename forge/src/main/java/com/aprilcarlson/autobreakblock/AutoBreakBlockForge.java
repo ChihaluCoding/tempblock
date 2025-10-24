@@ -5,12 +5,9 @@ import com.aprilcarlson.autobreakblock.command.AutoBreakCommands;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.player.Player;
 
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegisterCommandsEvent;
-import net.minecraftforge.event.TickEvent.LevelTickEvent;
-import net.minecraftforge.event.TickEvent.Phase;
+import net.minecraftforge.event.TickEvent.LevelTickEvent.Post;
 import net.minecraftforge.event.level.BlockEvent.EntityPlaceEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -18,22 +15,24 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod(AutoBreakBlockMod.MOD_ID)
 public final class AutoBreakBlockForge {
 
-    public AutoBreakBlockForge() {
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onCommonSetup);
-        MinecraftForge.EVENT_BUS.register(this);
+    public AutoBreakBlockForge(FMLJavaModLoadingContext context) {
+        var modBusGroup = context.getModBusGroup();
+
+        FMLCommonSetupEvent.getBus(modBusGroup).addListener(this::onCommonSetup);
+        RegisterCommandsEvent.BUS.addListener(this::onRegisterCommands);
+        EntityPlaceEvent.BUS.addListener(this::onBlockPlaced);
+        Post.BUS.addListener(this::onLevelTick);
     }
 
     private void onCommonSetup(final FMLCommonSetupEvent event) {
-        AutoBreakBlockMod.init();
+        event.enqueueWork(AutoBreakBlockMod::init);
     }
 
-    @SubscribeEvent
-    public void onRegisterCommands(RegisterCommandsEvent event) {
+    private void onRegisterCommands(RegisterCommandsEvent event) {
         AutoBreakCommands.register(event.getDispatcher(), event.getBuildContext());
     }
 
-    @SubscribeEvent
-    public void onBlockPlaced(EntityPlaceEvent event) {
+    private void onBlockPlaced(EntityPlaceEvent event) {
         if (!(event.getLevel() instanceof ServerLevel serverLevel)) {
             return;
         }
@@ -43,12 +42,8 @@ public final class AutoBreakBlockForge {
         AutoBreakBlockMod.handleBlockPlaced(serverLevel, event.getPos(), event.getPlacedBlock());
     }
 
-    @SubscribeEvent
-    public void onLevelTick(LevelTickEvent event) {
-        if (event.phase != Phase.END) {
-            return;
-        }
-        if (event.level instanceof ServerLevel serverLevel) {
+    private void onLevelTick(Post event) {
+        if (event.level() instanceof ServerLevel serverLevel) {
             AutoBreakBlockMod.tick(serverLevel);
         }
     }
