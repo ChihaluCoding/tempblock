@@ -16,7 +16,7 @@
       ],
       "vmArgs": [
         "@I:\\Programming\\PF\\minecraft mod\\tempblock\\tempblock-1.21.10\\neoforge\\build\\moddev\\clientRunVmArgs.txt",
-        "-Dfml.modFolders\u003dexamplemod%%I:\\Programming\\PF\\minecraft mod\\tempblock\\tempblock-1.21.10\\neoforge\\bin\\main"
+        "-Dfml.modFolders\u003dautobreakblock%%I:\\Programming\\PF\\minecraft mod\\tempblock\\tempblock-1.21.10\\neoforge\\bin\\main"
       ],
       "cwd": "${workspaceFolder}\\neoforge\\run",
       "env": {},
@@ -38,7 +38,7 @@
       ],
       "vmArgs": [
         "@I:\\Programming\\PF\\minecraft mod\\tempblock\\tempblock-1.21.10\\neoforge\\build\\moddev\\dataRunVmArgs.txt",
-        "-Dfml.modFolders\u003dexamplemod%%I:\\Programming\\PF\\minecraft mod\\tempblock\\tempblock-1.21.10\\neoforge\\bin\\main"
+        "-Dfml.modFolders\u003dautobreakblock%%I:\\Programming\\PF\\minecraft mod\\tempblock\\tempblock-1.21.10\\neoforge\\bin\\main"
       ],
       "cwd": "${workspaceFolder}\\neoforge\\run",
       "env": {},
@@ -60,7 +60,7 @@
       ],
       "vmArgs": [
         "@I:\\Programming\\PF\\minecraft mod\\tempblock\\tempblock-1.21.10\\neoforge\\build\\moddev\\serverRunVmArgs.txt",
-        "-Dfml.modFolders\u003dexamplemod%%I:\\Programming\\PF\\minecraft mod\\tempblock\\tempblock-1.21.10\\neoforge\\bin\\main"
+        "-Dfml.modFolders\u003dautobreakblock%%I:\\Programming\\PF\\minecraft mod\\tempblock\\tempblock-1.21.10\\neoforge\\bin\\main"
       ],
       "cwd": "${workspaceFolder}\\neoforge\\run",
       "env": {},

@@ -8,11 +8,10 @@ base {
 }
 mixin {
     config("${mod_id}.mixins.json")
-    config("${mod_id}.forge.mixins.json")
 }
 jar {
     manifest {
-        attributes["MixinConfigs"] = "${mod_id}.mixins.json,${mod_id}.forge.mixins.json"
+        attributes["MixinConfigs"] = "${mod_id}.mixins.json"
     }
 }
 
@@ -73,6 +72,7 @@ sourceSets.main.resources.srcDir 'src/generated/resources'
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    implementation "net.minecraftforge:eventbus:7.0-beta.12"
     annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
 
     // Forge's hack fix
@@ -92,3 +92,4 @@ sourceSets.each {
     it.output.resourcesDir = dir
     it.java.destinationDirectory = dir
 }
+

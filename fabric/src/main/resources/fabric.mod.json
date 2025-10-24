@@ -7,30 +7,27 @@
     "authors": [
         "${mod_author}"
     ],
-    "contact": {
-        "homepage": "https://fabricmc.net/",
-        "sources": "https://github.com/FabricMC/fabric-example-mod"
-    },
+    "contact": {},
     "license": "${license}",
-    "icon": "${mod_id}.png",
     "environment": "*",
     "entrypoints": {
         "main": [
-            "chihalu.example.examplemod.ExampleMod"
+            "com.aprilcarlson.autobreakblock.AutoBreakBlockFabric"
+        ],
+        "modmenu": [
+            "com.aprilcarlson.autobreakblock.fabric.ModMenuIntegration"
         ]
     },
     "mixins": [
-        "${mod_id}.mixins.json",
-        "${mod_id}.fabric.mixins.json"
+        "${mod_id}.mixins.json"
     ],
     "depends": {
         "fabricloader": ">=${fabric_loader_version}",
-        "fabric-api": "*",
+        "fabric-api": ">=${fabric_version}",
+        "cloth-config2": ">=15.0.0",
+        "modmenu": ">=11.0.0",
         "minecraft": "~${minecraft_version}",
         "java": ">=${java_version}"
-    },
-    "suggests": {
-        "another-mod": "*"
     }
 }
   

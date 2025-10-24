@@ -1,0 +1,11 @@
+{
+  "required": false,
+  "package": "com.aprilcarlson.autobreakblock.mixin",
+  "compatibilityLevel": "JAVA_${java_version}",
+  "mixins": [],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
