@@ -1,7 +1,5 @@
 package com.aprilcarlson.autobreakblock;
 
-import com.aprilcarlson.autobreakblock.ConfigManager;
-
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
