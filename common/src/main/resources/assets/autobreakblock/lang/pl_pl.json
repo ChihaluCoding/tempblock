@@ -1,0 +1,19 @@
+{
+  "commands.autobreak.block.invalid": "Nieznany blok: %s",
+  "commands.autobreak.toggle.enabled": "Auto Break Block włączony",
+  "commands.autobreak.toggle.disabled": "Auto Break Block wyłączony",
+  "commands.autobreak.block.set": "Blok docelowy ustawiono na %s",
+  "commands.autobreak.delay.set": "Opóźnienie ustawiono na %s sekund",
+  "commands.autobreak.status.enabled": "Włączone: %s",
+  "commands.autobreak.status.block": "Blok docelowy: %s",
+  "commands.autobreak.status.delay": "Opóźnienie: %s sekund",
+  "commands.autobreak.permission": "Musisz mieć uprawnienia operatora, aby użyć tej komendy",
+  "config.autobreakblock.title": "Auto Break Block",
+  "config.autobreakblock.category.general": "Ogólne",
+  "config.autobreakblock.enabled": "Włącz automatyczne niszczenie",
+  "config.autobreakblock.target_block": "Blok docelowy",
+  "config.autobreakblock.target_block.tooltip": "Bloki z tym identyfikatorem zostaną zaplanowane do usunięcia.",
+  "config.autobreakblock.target_block.error": "Nieznany identyfikator bloku: %s",
+  "config.autobreakblock.delay": "Opóźnienie (sekundy)",
+  "config.autobreakblock.delay.tooltip": "Czas między postawieniem a automatycznym zniszczeniem."
+}

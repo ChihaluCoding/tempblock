@@ -1,0 +1,19 @@
+{
+  "commands.autobreak.block.invalid": "알 수 없는 블록입니다: %s",
+  "commands.autobreak.toggle.enabled": "Auto Break Block이 활성화되었습니다",
+  "commands.autobreak.toggle.disabled": "Auto Break Block이 비활성화되었습니다",
+  "commands.autobreak.block.set": "대상 블록이 %s(으)로 설정되었습니다",
+  "commands.autobreak.delay.set": "지연이 %s초로 설정되었습니다",
+  "commands.autobreak.status.enabled": "활성화: %s",
+  "commands.autobreak.status.block": "대상 블록: %s",
+  "commands.autobreak.status.delay": "지연: %s초",
+  "commands.autobreak.permission": "이 명령을 실행하려면 OP 권한이 필요합니다",
+  "config.autobreakblock.title": "Auto Break Block",
+  "config.autobreakblock.category.general": "일반",
+  "config.autobreakblock.enabled": "자동 파괴 활성화",
+  "config.autobreakblock.target_block": "대상 블록",
+  "config.autobreakblock.target_block.tooltip": "이 ID의 블록이 제거되도록 예약됩니다.",
+  "config.autobreakblock.target_block.error": "알 수 없는 블록 ID입니다: %s",
+  "config.autobreakblock.delay": "지연(초)",
+  "config.autobreakblock.delay.tooltip": "설치 후 자동 파괴까지의 시간."
+}

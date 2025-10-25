@@ -1,0 +1,19 @@
+{
+  "commands.autobreak.block.invalid": "未知のブロックです: %s",
+  "commands.autobreak.toggle.enabled": "Auto Break Block を有効にしました",
+  "commands.autobreak.toggle.disabled": "Auto Break Block を無効にしました",
+  "commands.autobreak.block.set": "対象ブロックを %s に設定しました",
+  "commands.autobreak.delay.set": "遅延を %s 秒に設定しました",
+  "commands.autobreak.status.enabled": "有効: %s",
+  "commands.autobreak.status.block": "対象ブロック: %s",
+  "commands.autobreak.status.delay": "遅延: %s 秒",
+  "commands.autobreak.permission": "このコマンドを実行するにはOP権限が必要です",
+  "config.autobreakblock.title": "Auto Break Block",
+  "config.autobreakblock.category.general": "全般",
+  "config.autobreakblock.enabled": "自動破壊を有効にする",
+  "config.autobreakblock.target_block": "対象ブロック",
+  "config.autobreakblock.target_block.tooltip": "このIDのブロックは破壊予定に登録されます。",
+  "config.autobreakblock.target_block.error": "未知のブロックIDです: %s",
+  "config.autobreakblock.delay": "遅延（秒）",
+  "config.autobreakblock.delay.tooltip": "設置から自動破壊までの時間。"
+}

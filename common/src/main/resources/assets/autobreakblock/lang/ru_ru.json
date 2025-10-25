@@ -1,0 +1,19 @@
+{
+  "commands.autobreak.block.invalid": "Неизвестный блок: %s",
+  "commands.autobreak.toggle.enabled": "Auto Break Block включён",
+  "commands.autobreak.toggle.disabled": "Auto Break Block выключен",
+  "commands.autobreak.block.set": "Целевой блок установлен: %s",
+  "commands.autobreak.delay.set": "Задержка установлена: %s секунд",
+  "commands.autobreak.status.enabled": "Включено: %s",
+  "commands.autobreak.status.block": "Целевой блок: %s",
+  "commands.autobreak.status.delay": "Задержка: %s секунд",
+  "commands.autobreak.permission": "Для выполнения команды нужны права оператора",
+  "config.autobreakblock.title": "Auto Break Block",
+  "config.autobreakblock.category.general": "Общие",
+  "config.autobreakblock.enabled": "Включить автоматическое разрушение",
+  "config.autobreakblock.target_block": "Целевой блок",
+  "config.autobreakblock.target_block.tooltip": "Блоки с этим ID будут запланированы на удаление.",
+  "config.autobreakblock.target_block.error": "Неизвестный ID блока: %s",
+  "config.autobreakblock.delay": "Задержка (секунды)",
+  "config.autobreakblock.delay.tooltip": "Время между установкой и автоматическим разрушением."
+}

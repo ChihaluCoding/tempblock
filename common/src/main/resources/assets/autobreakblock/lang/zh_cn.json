@@ -1,0 +1,19 @@
+{
+  "commands.autobreak.block.invalid": "未知方块：%s",
+  "commands.autobreak.toggle.enabled": "Auto Break Block 已启用",
+  "commands.autobreak.toggle.disabled": "Auto Break Block 已禁用",
+  "commands.autobreak.block.set": "目标方块已设置为 %s",
+  "commands.autobreak.delay.set": "延迟已设置为 %s 秒",
+  "commands.autobreak.status.enabled": "启用：%s",
+  "commands.autobreak.status.block": "目标方块：%s",
+  "commands.autobreak.status.delay": "延迟：%s 秒",
+  "commands.autobreak.permission": "你需要管理员权限才能执行该命令",
+  "config.autobreakblock.title": "Auto Break Block",
+  "config.autobreakblock.category.general": "通用",
+  "config.autobreakblock.enabled": "启用自动破坏",
+  "config.autobreakblock.target_block": "目标方块",
+  "config.autobreakblock.target_block.tooltip": "具有此ID的方块会被计划移除。",
+  "config.autobreakblock.target_block.error": "未知方块ID：%s",
+  "config.autobreakblock.delay": "延迟（秒）",
+  "config.autobreakblock.delay.tooltip": "从放置到自动破坏的时间。"
+}
