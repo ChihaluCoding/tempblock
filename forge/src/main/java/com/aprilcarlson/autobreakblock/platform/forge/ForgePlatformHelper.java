@@ -1,5 +1,5 @@
 
-package com.aprilcarlson.autobreakblock.platform;
+package com.aprilcarlson.autobreakblock.platform.forge;
 
 import java.nio.file.Path;
 

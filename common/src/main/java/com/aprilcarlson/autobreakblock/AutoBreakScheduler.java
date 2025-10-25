@@ -53,7 +53,7 @@ public final class AutoBreakScheduler {
                 continue;
             }
 
-            if (!level.hasChunkAt(task.position)) {
+            if (!level.isLoaded(task.position)) {
                 continue;
             }
 

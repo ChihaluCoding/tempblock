@@ -69,7 +69,7 @@ public final class AutoBreakBlockMod {
 
         for (PendingPlacement placement : placements) {
             BlockPos pos = placement.pos();
-            if (!level.hasChunkAt(pos)) {
+            if (!level.isLoaded(pos)) {
                 queuePlacement(level, pos, level.getBlockState(pos));
                 continue;
             }

@@ -1,4 +1,4 @@
-package com.aprilcarlson.autobreakblock.platform;
+package com.aprilcarlson.autobreakblock.platform.fabric;
 
 import java.nio.file.Path;
 

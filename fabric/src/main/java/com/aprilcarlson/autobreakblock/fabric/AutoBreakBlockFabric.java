@@ -1,4 +1,7 @@
-package com.aprilcarlson.autobreakblock;
+package com.aprilcarlson.autobreakblock.fabric;
+
+import com.aprilcarlson.autobreakblock.AutoBreakBlockMod;
+import com.aprilcarlson.autobreakblock.ConfigManager;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
@@ -39,5 +42,4 @@ public final class AutoBreakBlockFabric implements ModInitializer {
         ServerTickEvents.END_WORLD_TICK.register(AutoBreakBlockMod::tick);
     }
 }
-
 

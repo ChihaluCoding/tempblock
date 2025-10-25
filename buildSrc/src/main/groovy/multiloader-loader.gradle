@@ -1,3 +1,5 @@
+import org.gradle.api.file.DuplicatesStrategy
+
 plugins {
     id 'multiloader-common'
 }
@@ -21,12 +23,22 @@ dependencies {
     commonResources project(path: ':common', configuration: 'commonResources')
 }
 
+def commonProject = project(':common')
+def commonSourceSets = commonProject.extensions.getByName('sourceSets')
+sourceSets {
+    main {
+        commonSourceSets.main.java.srcDirs.each { srcDir -> java.srcDir(srcDir) }
+        commonSourceSets.main.resources.srcDirs.each { srcDir -> resources.srcDir(srcDir) }
+    }
+}
+
 tasks.named('compileJava', JavaCompile) {
     dependsOn(configurations.commonJava)
     source(configurations.commonJava)
 }
 
 processResources {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     dependsOn(configurations.commonResources)
     from(configurations.commonResources)
 }
